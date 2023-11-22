@@ -1,5 +1,7 @@
 package com.andrecalisto.login.controller;
 
+import com.andrecalisto.login.App;
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -26,8 +28,8 @@ public class TelaLoginController {
     private Label msgLabel;
 
     @FXML
-    void cadastrar(ActionEvent event) {
-
+    void cadastrar(ActionEvent event) throws IOException {
+        App.setRoot("telaCadastro");
     }
 
     @FXML
